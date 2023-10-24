@@ -1,0 +1,13 @@
+.card {
+    border: 1px solid grey;
+    padding: 0;
+}
+
+.card-header {
+    border-bottom: 1px solid grey;
+    padding: 1rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
