@@ -1,0 +1,15 @@
+.button {
+    border-radius: 5px;
+    padding: .5rem 1rem; 
+    border: 1px solid green;   
+}
+
+.button--primary {
+    color: #eee;
+    background-color: green;
+}
+
+.button--secondary {
+    color: green;
+    background-color: transparent;
+}

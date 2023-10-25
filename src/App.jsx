@@ -1,17 +1,21 @@
-import './App.css'
-import MyComponent from './MyComponent/MyComponent'
-import Card from './Card/Card'
+import { useState } from 'react';
+import Cards from './Cards/Cards';
+import './App.css';
+import NiceButton from './NiceButton/NiceButton';
 
 function App() {
+  const [counter, setCounter] = useState(0);
+
+  function handleClick(){
+    setCounter(counter + 1);
+  }
+
   return (
-    <main>
-      <h1>hello world!</h1>
-      <MyComponent subject="fellow researchers" b="test" />
-      <Card 
-      title="MY Card" 
-      text="This is the text that should appear on my card"/>
-    </main>
+    <>
+      <h1>{counter}</h1>
+      <NiceButton onClick={handleClick} variant={'primary'}>Count up</NiceButton>
+      <NiceButton onClick={() => setCounter(0)} variant={'secondary'}>Reset</NiceButton>
+    </>
   )
 }
-
 export default App

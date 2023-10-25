@@ -1,0 +1,26 @@
+import { useState } from 'react'
+import './App.css'
+import Cards from './Cards/Cards';
+
+function App() {
+  const [item, setItems] = useState([
+    { title: 'Item 1', text: 'Some text...'}, 
+    { title: 'Item 2', text: 'Some more text...' }
+]);
+
+  function handleClick(){
+    //????
+  }
+
+  function mapNameToCard(name){
+    return //????
+  }
+
+  return (
+    <>
+    <Cards> { items.map(mapNameToLi) } </Cards>
+    <button onClick={handleClick}>Add card</button>
+    </>
+  )
+}
+export default App
