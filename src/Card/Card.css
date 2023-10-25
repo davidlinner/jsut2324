@@ -1,6 +1,10 @@
 .card {
     border: 1px solid grey;
     padding: 0;
+    max-width: 10rem;
+    margin: 1rem;
+    border-radius: 4%;
+    box-shadow: .25rem .25rem 20px 10px #ccc;
 }
 
 .card-header {
@@ -10,4 +14,5 @@
 
 .card-body {
     padding: 1rem;
+    min-height: 5rem;
 }

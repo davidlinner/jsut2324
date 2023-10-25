@@ -4,10 +4,10 @@ function Card(props){
     return (
     <div className="card">
         <div className='card-header'>
-            title
+            {props.title}
         </div>
         <div className='card-body'>
-            text
+            {props.text}
         </div>
     </div>
     )
